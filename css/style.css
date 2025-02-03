@@ -518,6 +518,9 @@ button:hover {
         flex-direction: column; 
         align-items: flex-start; 
     }
+    .barra-navegacion .logo {
+        width: 120px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
 
     .navegacion {
         flex-direction: column; 
@@ -550,6 +553,9 @@ button:hover {
     .barra-navegacion {
         flex-direction: row; 
         align-items: center; 
+    }
+    .barra-navegacion .logo {
+        width: 120px; /* Ajusta el tamaño del logo para pantallas medianas */
     }
 
     .navegacion {
@@ -584,6 +590,9 @@ button:hover {
     .barra-navegacion {
         flex-direction: row; 
         align-items: center; 
+    }
+    .barra-navegacion .logo {
+        width: 150px; /* Ajusta el tamaño del logo para pantallas grandes */
     }
 
     .navegacion {
