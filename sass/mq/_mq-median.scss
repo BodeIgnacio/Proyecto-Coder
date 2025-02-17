@@ -1,0 +1,36 @@
+/* Estilos para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-testimonios blockquote,
+    .auto-nuevo-ingreso,
+    .auto-nuevo-ingreso-catalogo {
+        width: 48%; 
+    }
+
+    .contacto {
+        flex-direction: row; 
+        gap: 50px; 
+    }
+
+    .barra-navegacion {
+        flex-direction: row; 
+        align-items: center; 
+    }
+    .barra-navegacion .logo {
+        width: 120px; /* Ajusta el tamaño del logo para pantallas medianas */
+    }
+
+    .navegacion {
+        flex-direction: row; 
+        gap: 15px; 
+    }
+
+    .nuevo-ingreso {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+
+    .footer-top {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+}

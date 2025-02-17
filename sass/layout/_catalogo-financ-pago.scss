@@ -1,0 +1,57 @@
+.financiacion {
+    background-color: $black;
+    color:  $white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        color: $golden;
+        border-bottom: 2px solid $golden;
+        padding-bottom: 10px;
+        margin-bottom: 20px
+    }
+}
+.plan-financiero {
+    background-color: $grey-black;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid $golden;
+    margin-bottom: 15px;
+    @include hover-animation-2;
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+.formas-pago {
+    background-color: $black;
+    color: $white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    h2{
+        text-align: center;
+        font-size: 36px;
+        color: $golden;
+        border-bottom: 2px solid $golden;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i {
+                color: $golden;
+                font-size: 22px;
+            }
+        }
+    }
+}

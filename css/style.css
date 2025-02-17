@@ -11,18 +11,11 @@ propiedad: valor
     font-family: "Inter", serif;
 }
 
-
-/*----------------------------------------------HEADER----------------------------------------------*/
-header{
-    background-color: #333;
-}
-/*--------------------------------------------------------------------------------------------------*/
-
-
 /*---------------------------------------------BODY-------------------------------------------------*/
 body{ 
     background-color: #D0CFCF; /*Color del fondo de la pagina*/
 }
+
 h1{
     font-size: 50px;
     border-bottom: 2px solid #000000; /* grosor y color */
@@ -208,6 +201,7 @@ section.testimonios {
     align-items: center;
 }
 .nuevo-ingreso h2 {
+    font-size: 36px;
     width: 100%;
     text-align: center;
     color: #daa520; /* Color del texto */
@@ -430,33 +424,35 @@ footer .footer-bottom {
     background-color: #222;
   }
   
-  .sobre-nosotros {
+.sobre-nosotros {
     flex: 1; /* Ocupa el 50% del ancho */
     padding: 20px;
     color: #fff;
     border-radius: 10px;
     grid-area: sobre-nosotros;
-  }
+}
 
-  .sobre-nosotros h2 {
+.sobre-nosotros h2 {
+    font-size: 36px;
     border-bottom: 2px solid #daa520;
     text-align: center;
     color: #daa520;
-  }
-  .sobre-nosotros h3 {
+}
+.sobre-nosotros h3 {
+    font-size: 30px;
     text-align: center;
     color: #daa520;
-  }
+}
   
 
   
-  .formulario {
+.formulario {
     flex: 1; /* Ocupa el 50% del ancho */
     padding: 20px;
     border-radius: 10px;
     color: #fff;
     grid-area: formulario;
-  }
+}
 
   form {
     display: flex;

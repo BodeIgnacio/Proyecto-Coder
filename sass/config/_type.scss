@@ -1,0 +1,30 @@
+// colores
+$black:#222;
+$grey-black:#333;
+$golden: #daa520;
+$white: #fff;
+
+body{ 
+    background-color: #D0CFCF; /*Color del fondo de la pagina*/
+}
+
+h1{
+    font-size: 50px;
+    border-bottom: 2px solid #000000; /* grosor y color */
+    margin-top: 10px; /* Ajusta el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+    text-align: center;
+    padding: 10px;
+
+}
+
+h2 {
+    font-size: 36px; /* tamaño del texto */
+    color: #333333; /* color del texto */
+    text-align: center; /* alinea el texto al centro */
+    margin-top: 10px; /* Ajusta el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+    padding: 10px; /* Ajusta el relleno */
+    border-bottom: 2px solid #000; /* agrega una línea debajo del texto */
+    text-transform: capitalize; /* texto todo en mayuscula */
+}

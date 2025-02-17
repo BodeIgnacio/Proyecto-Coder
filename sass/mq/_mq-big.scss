@@ -1,0 +1,36 @@
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .auto-nuevo-ingreso-catalogo {
+        width: 30%; /*para que haya 3 por fila*/
+    }
+    .auto-nuevo-ingreso, .contenedor-testimonios blockquote{
+        width: 40%; /*para que haya 2 por fila*/;
+    }
+
+    .contacto {
+        flex-direction: row; 
+    }
+
+    .barra-navegacion {
+        flex-direction: row; 
+        align-items: center; 
+    }
+    .barra-navegacion .logo {
+        width: 150px; /* Ajusta el tamaño del logo para pantallas grandes */
+    }
+
+    .navegacion {
+        flex-direction: row; 
+        gap: 20px; 
+    }
+
+    .nuevo-ingreso {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+
+    .footer-top {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+}

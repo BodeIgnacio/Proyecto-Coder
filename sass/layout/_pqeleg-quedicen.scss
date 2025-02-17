@@ -1,0 +1,73 @@
+.porque-elegirnos{
+    background-color: $black;
+    color: $white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    h2 {
+    text-align: center;
+    font-size: 36px;
+    color: $golden;
+    border-bottom: 2px solid $golden;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    }
+    ul li {
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i {
+            color: $golden;
+            font-size: 22px;
+        }
+    }
+}
+
+.testimonios {
+    background-color: $black;
+    color: $white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    h2{
+        text-align: center;
+    font-size: 36px;
+    color: $golden;
+    border-bottom: 2px solid $golden;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    }
+}
+
+/* Contenedor para organizar los testimonios */
+.contenedor-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px; /* Espaciado entre los testimonios */
+    max-width: 900px;
+    margin: 0 auto;
+    blockquote {
+        border-left: 5px solid $golden;
+        background-color: $white;
+        border-radius: 5px;
+        padding: 15px 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+       @include hover-animation-2;
+        p {
+            color: $grey-black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        cite {
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}

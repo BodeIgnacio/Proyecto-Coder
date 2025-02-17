@@ -1,0 +1,39 @@
+.logo{
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    display: block;
+}
+
+/*Para lograr que mi imagen de la pagina principal quede a lo largo*/
+.contenedor-imagen {
+    width: 100%;
+}
+.imagen-indice{
+    border-radius: 10px ;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+.imagenes{
+    /*width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px; 
+    margin-bottom: 10px;  
+    object-fit: contain;
+    */
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen al contenedor recortando si es necesario */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+.imagen-mapa{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px; /* Ajusta el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior */   
+    margin: 10px auto;
+    display: block;
+}

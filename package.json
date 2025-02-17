@@ -1,0 +1,20 @@
+{
+  "name": "proyectocoder_entrega2",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Ignacio Bode</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch sass/style.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BodeIgnacio/Proyecto-Coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BodeIgnacio/Proyecto-Coder/issues"
+  },
+  "homepage": "https://github.com/BodeIgnacio/Proyecto-Coder#readme"
+}

@@ -1,0 +1,19 @@
+// reset
+@import './config/reset';
+@import './config/type';
+@import './config/mixing';
+
+// layout
+@import './layout/imagenes';
+@import './layout/menu';
+@import './layout/mini-catalogo';
+@import './layout/footer-menu';
+@import './layout/catalogo-completo';
+@import './layout/catalogo-financ-pago';
+@import './layout/pqeleg-quedicen';
+@import './layout/nosotros-formulario';
+
+// media queries
+@import './mq/mq-little';
+@import './mq/mq-median';
+@import './mq/mq-big';
