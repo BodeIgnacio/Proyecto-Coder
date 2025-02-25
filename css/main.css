@@ -554,6 +554,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
+  .imagen-indice {
+    max-height: 300px; /* Ajusta la altura máxima para pantallas pequeñas */
+  }
 }
 /* Estilos para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -584,6 +587,9 @@ button:hover {
   .footer-top {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .imagen-indice {
+    max-height: 350px; /* Ajusta la altura máxima para pantallas medianas */
   }
 }
 /* Estilos para pantallas grandes */
