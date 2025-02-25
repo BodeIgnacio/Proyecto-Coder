@@ -1,39 +1,101 @@
 /* Estilos para pantallas pequeñas (Mobile First) */
 @media (max-width: 768px) {
+
+    /* Ajustes generales */
     .contenedor-testimonios blockquote,
     .auto-nuevo-ingreso,
     .auto-nuevo-ingreso-catalogo {
-        width: 100%; 
+        width: 100%;
     }
 
     .contacto {
-        flex-direction: column; 
-        gap: 20px; 
+        flex-direction: column;
+        gap: 20px;
     }
 
     .formulario {
-        margin-left: 0; 
+        margin-left: 0;
     }
 
+    /* Barra de navegación */
     .barra-navegacion {
-        flex-direction: column; 
-        align-items: flex-start; 
+        display: flex;
+        justify-content: space-between; /* Separa logo y menú */
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
     }
+
     .barra-navegacion .logo {
-        width: 120px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+        width: 120px;
     }
 
+    /* Menú Hamburguesa */
+    .hamburguesa {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        right: 20px; /* Empuja el menú más a la derecha */
+        top: 50%;
+        transform: translateY(-50%); /* Centra verticalmente */
+
+        span {
+            height: 3px;
+            width: 30px;
+            background: #fff;
+            margin: 5px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    /* Menú de navegación */
     .navegacion {
-        flex-direction: column; 
-        gap: 10px; 
+        position: absolute;
+        top: 100%;
+        right: 0; /* Lo alinea a la derecha */
+        width: 200px; /* Ajusta el ancho según prefieras */
+        background-color: #333;
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+        justify-content: center;
+        padding-left: 40px; /* Espacio para alinear el texto */
+       
+
+        a {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #444;
+            }
+        }
     }
 
+    /* Clase activa para desplegar el menú */
+    .navegacion.activo {
+        max-height: 300px;
+    }
+
+    /* Ajustes de contenido */
     .nuevo-ingreso {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
+    /* Footer */
     .footer-top {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 }

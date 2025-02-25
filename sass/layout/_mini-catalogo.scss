@@ -11,8 +11,8 @@
     font-size: 36px;
     width: 100%;
     text-align: center;
-    color: $golden; /* Color del texto */
-    margin-bottom: 20px; /* Espaciado debajo del título */
+    color: $golden; 
+    margin-bottom: 20px; 
     border-bottom: 2px solid #daa520;  
     }
     
@@ -23,7 +23,7 @@
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    width:50%; /* Ajuste exacto para 2 columnas */
+    width:50%; 
     height: 280px;
     @include flex-jc-sa;
     flex-direction: column;

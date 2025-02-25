@@ -1,8 +1,8 @@
 .contacto {
     display: flex;
-    justify-content: space-around; /* Espacio entre los dos bloques */
-    align-items: flex-start; /* Alinea ambos al inicio */
-    gap: 100px; /* Espacio entre las secciones */
+    justify-content: space-around; 
+    align-items: flex-start; 
+    gap: 100px; 
     padding: 20px;
     max-width: auto;
     margin: auto;
@@ -10,7 +10,7 @@
 }
   
 .sobre-nosotros {
-    flex: 1; /* Ocupa el 50% del ancho */
+    flex: 1; 
     padding: 20px;
     color: $white;
     border-radius: 10px;
@@ -29,7 +29,7 @@
 }
 
 .formulario {
-    flex: 1; /* Ocupa el 50% del ancho */
+    flex: 1; 
     padding: 20px;
     border-radius: 10px;
     color: $white;
@@ -59,8 +59,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    max-width: 200px; /* Limita el ancho del botón */
-    margin: auto; /* Lo centra dentro del formulario */
+    max-width: 200px; 
+    margin: auto; 
     &:hover {
         background-color: #b8860b;
     }

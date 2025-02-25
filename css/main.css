@@ -13,27 +13,27 @@ body {
 
 h1 {
   font-size: 50px;
-  border-bottom: 2px solid #000000; /* grosor y color */
-  margin-top: 10px; /* Ajusta el margen superior */
-  margin-bottom: 10px; /* Ajusta el margen inferior */
+  border-bottom: 2px solid #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   padding: 10px;
 }
 
 h2 {
-  font-size: 36px; /* tamaño del texto */
-  color: #333333; /* color del texto */
-  text-align: center; /* alinea el texto al centro */
-  margin-top: 10px; /* Ajusta el margen superior */
-  margin-bottom: 10px; /* Ajusta el margen inferior */
-  padding: 10px; /* Ajusta el relleno */
-  border-bottom: 2px solid #000; /* agrega una línea debajo del texto */
-  text-transform: capitalize; /* texto todo en mayuscula */
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+  text-transform: capitalize;
 }
 
 .logo {
-  width: 150px; /* Ajusta el tamaño del logo */
-  height: auto; /* Mantiene la proporción del logo */
+  width: 150px;
+  height: auto;
   display: block;
 }
 
@@ -51,25 +51,18 @@ h2 {
 }
 
 .imagenes {
-  /*width: 150px;
+  width: 300px;
   height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  margin-top: 10px; 
-  margin-bottom: 10px;  
-  object-fit: contain;
-  */
-  width: 300px; /* Ancho fijo */
-  height: 200px; /* Alto fijo */
-  object-fit: cover; /* Ajusta la imagen al contenedor recortando si es necesario */
-  border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
 .imagen-mapa {
   width: 350px;
   height: auto;
   border-radius: 10px;
-  margin-top: 10px; /* Ajusta el margen superior */
-  margin-bottom: 10px; /* Ajusta el margen inferior */
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin: 10px auto;
   display: block;
 }
@@ -77,39 +70,54 @@ h2 {
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centra verticalmente */
-  padding: 10px 20px; /* Espaciado interno */
-  background-color: #333; /* Fondo oscuro */
-  color: #fff; /* Texto blanco */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   grid-area: barra-navegacion;
   /* Estilo del logo */
 }
 .barra-navegacion .logo {
-  width: 120px; /* Ajusta el tamaño del logo */
-  max-width: 100%; /* Asegura que sea responsive */
+  width: 120px;
+  max-width: 100%;
 }
 
 /* Estilo del menú de navegación */
 .navegacion {
-  list-style: none; /* Elimina los puntos de lista */
-  display: flex; /* Crea una disposición horizontal */
-  gap: 20px; /* Espaciado entre elementos */
-  margin: 0; /* Elimina márgenes */
-  padding: 0; /* Elimina relleno */
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 .navegacion a {
-  text-decoration: none; /* Elimina subrayado */
-  color: #fff; /* Texto blanco */
-  font-size: 16px; /* Tamaño del texto */
-  font-weight: bold; /* Negrita para destacar */
-  padding: 5px 10px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Suaviza el hover */
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 .navegacion a:hover {
-  background-color: #daa520; /* Fondo dorado al pasar el mouse */
-  color: #333; /* Texto oscuro */
+  background-color: #daa520;
+  color: #333;
+}
+
+.hamburguesa {
+  display: none; /* Se muestra en mobile */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+}
+.hamburguesa span {
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
 .nuevo-ingreso {
@@ -126,8 +134,8 @@ h2 {
   font-size: 36px;
   width: 100%;
   text-align: center;
-  color: #daa520; /* Color del texto */
-  margin-bottom: 20px; /* Espaciado debajo del título */
+  color: #daa520;
+  margin-bottom: 20px;
   border-bottom: 2px solid #daa520;
 }
 
@@ -137,7 +145,7 @@ h2 {
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  width: 50%; /* Ajuste exacto para 2 columnas */
+  width: 50%;
   height: 280px;
   display: flex;
   justify-content: space-around;
@@ -164,52 +172,52 @@ footer {
 }
 footer .footer-top {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-  align-items: center; /* Alinea verticalmente al centro */
-  gap: 20px; /* Espaciado entre elementos */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 footer .logo {
-  width: 120px; /* Tamaño del logo */
-  height: auto; /* Mantiene las proporciones del logo */
+  width: 120px;
+  height: auto;
 }
 footer nav {
   display: flex;
   justify-content: center;
 }
 footer .navegacion-footer {
-  list-style: none; /* Sin puntos de lista */
+  list-style: none;
   display: flex;
-  gap: 20px; /* Espaciado entre enlaces */
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
 footer .navegacion-footer li a {
-  color: #daa520; /* Color dorado */
-  text-decoration: none; /* Sin subrayado */
+  color: #daa520;
+  text-decoration: none;
   font-weight: bold;
 }
 footer .navegacion-footer li a:hover {
-  color: #fff; /* Cambia a blanco al pasar el mouse */
+  color: #fff;
   text-decoration: underline;
 }
 footer .footer-contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px; /* Espaciado entre los párrafos */
+  gap: 10px;
 }
 footer .footer-contact p {
   margin: 0;
 }
 footer .footer-contact p i {
-  color: #daa520; /* Iconos dorados */
-  margin-right: 5px; /* Espaciado entre el icono y el texto */
+  color: #daa520;
+  margin-right: 5px;
 }
 footer .footer-bottom {
-  text-align: center; /* Centra el copyright */
-  font-size: 0.9rem; /* Tamaño más pequeño */
-  color: #aaa; /* Gris claro */
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
   margin-top: 20px;
 }
 
@@ -354,7 +362,7 @@ footer .footer-bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px; /* Espaciado entre los testimonios */
+  gap: 40px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -384,9 +392,9 @@ footer .footer-bottom {
 
 .contacto {
   display: flex;
-  justify-content: space-around; /* Espacio entre los dos bloques */
-  align-items: flex-start; /* Alinea ambos al inicio */
-  gap: 100px; /* Espacio entre las secciones */
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 100px;
   padding: 20px;
   max-width: auto;
   margin: auto;
@@ -394,7 +402,7 @@ footer .footer-bottom {
 }
 
 .sobre-nosotros {
-  flex: 1; /* Ocupa el 50% del ancho */
+  flex: 1;
   padding: 20px;
   color: #fff;
   border-radius: 10px;
@@ -413,7 +421,7 @@ footer .footer-bottom {
 }
 
 .formulario {
-  flex: 1; /* Ocupa el 50% del ancho */
+  flex: 1;
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -443,8 +451,8 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  max-width: 200px; /* Limita el ancho del botón */
-  margin: auto; /* Lo centra dentro del formulario */
+  max-width: 200px;
+  margin: auto;
 }
 button:hover {
   background-color: #b8860b;
@@ -456,6 +464,7 @@ button:hover {
 
 /* Estilos para pantallas pequeñas (Mobile First) */
 @media (max-width: 768px) {
+  /* Ajustes generales */
   .contenedor-testimonios blockquote,
   .auto-nuevo-ingreso,
   .auto-nuevo-ingreso-catalogo {
@@ -468,20 +477,73 @@ button:hover {
   .formulario {
     margin-left: 0;
   }
+  /* Barra de navegación */
   .barra-navegacion {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    justify-content: space-between; /* Separa logo y menú */
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
   }
   .barra-navegacion .logo {
-    width: 120px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    width: 120px;
   }
-  .navegacion {
+  /* Menú Hamburguesa */
+  .hamburguesa {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    right: 20px; /* Empuja el menú más a la derecha */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
   }
+  .hamburguesa span {
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  /* Menú de navegación */
+  .navegacion {
+    position: absolute;
+    top: 100%;
+    right: 0; /* Lo alinea a la derecha */
+    width: 200px; /* Ajusta el ancho según prefieras */
+    background-color: #333;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+    justify-content: center;
+    padding-left: 40px; /* Espacio para alinear el texto */
+  }
+  .navegacion a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .navegacion a:hover {
+    background-color: #444;
+  }
+  /* Clase activa para desplegar el menú */
+  .navegacion.activo {
+    max-height: 300px;
+  }
+  /* Ajustes de contenido */
   .nuevo-ingreso {
     flex-direction: column;
   }
+  /* Footer */
   .footer-top {
     flex-direction: column;
     align-items: center;
