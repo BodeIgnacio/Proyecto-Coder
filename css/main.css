@@ -49,6 +49,7 @@ h2 {
   margin: 0 auto;
   height: auto;
   width: 100%;
+  max-height: 400px; /* Limita la altura máxima */
 }
 
 .imagenes {
@@ -554,6 +555,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
+  .imagen-indice {
+    max-height: 300px; /* Ajusta la altura máxima para pantallas pequeñas */
+  }
 }
 /* Estilos para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -585,6 +589,9 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
   }
+  .imagen-indice {
+    max-height: 400px;
+  }
 }
 /* Estilos para pantallas grandes */
 @media (min-width: 1025px) {
@@ -615,6 +622,9 @@ button:hover {
   .footer-top {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .imagen-indice {
+    max-height: 400px;
   }
 }
 
