@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: #D0CFCF; /*Color del fondo de la pagina*/
+  background-color: #D0CFCF;
+  padding-top: 140px;
 }
 
 h1 {
@@ -76,6 +77,11 @@ h2 {
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   grid-area: barra-navegacion;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   /* Estilo del logo */
 }
 .barra-navegacion .logo {
@@ -480,10 +486,10 @@ button:hover {
   /* Barra de navegación */
   .barra-navegacion {
     display: flex;
-    justify-content: space-between; /* Separa logo y menú */
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: relative;
+    position: fixed;
   }
   .barra-navegacion .logo {
     width: 120px;
@@ -495,9 +501,9 @@ button:hover {
     cursor: pointer;
     z-index: 1000;
     position: absolute;
-    right: 20px; /* Empuja el menú más a la derecha */
+    right: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente */
+    transform: translateY(-50%);
   }
   .hamburguesa span {
     height: 3px;
@@ -511,8 +517,8 @@ button:hover {
   .navegacion {
     position: absolute;
     top: 100%;
-    right: 0; /* Lo alinea a la derecha */
-    width: 200px; /* Ajusta el ancho según prefieras */
+    right: 0;
+    width: 200px;
     background-color: #333;
     flex-direction: column;
     overflow: hidden;
@@ -520,9 +526,9 @@ button:hover {
     transition: max-height 0.5s ease-in-out;
     border-radius: 0 0 10px 10px;
     width: 100%;
-    align-items: flex-start; /* Alinear elementos a la izquierda */
+    align-items: flex-start;
     justify-content: center;
-    padding-left: 40px; /* Espacio para alinear el texto */
+    padding-left: 40px;
   }
   .navegacion a {
     display: block;
