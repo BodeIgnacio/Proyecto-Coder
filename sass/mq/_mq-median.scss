@@ -35,5 +35,9 @@
     }
     .imagen-indice {
         max-height: 350px; /* Ajusta la altura máxima para pantallas medianas */
-      }
+    }
+    .contenedor-testimonios{
+        flex-direction: row; 
+        justify-content: space-around;
+    }
 }

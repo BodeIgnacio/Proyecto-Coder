@@ -23,65 +23,55 @@
 <body>
   <div class ="grid-container-index">
     <header class="barra-navegacion">
-        <img src="./assets/Logo.webp" alt="logo" class="logo">
-        <div class="hamburguesa" id="hamburguesa">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav id="navegacion">
-          <ul class="navegacion">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./html/catalogo.html">Catalogo</a></li>
-            <li><a href="./html/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
+      <img src="./assets/Logo.webp" alt="logo" class="logo">
+      <div class="hamburguesa" id="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="navegacion">
+        <ul class="navegacion">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./html/catalogo.html">Catalogo</a></li>
+          <li><a href="./html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     
     <main>  
-      
       <h1 class="titulo-principal">
         VENTA DE AUTOS OKM Y USADOS
       </h1>
-      <br>
-
       <div class="contenedor-imagen">
         <img src="./assets/portadaNueva.webp" alt="portada" class="imagen-indice">
       </div>
       <br>
-
-        
-        <section class="nuevo-ingreso">
-          <h2>
-            Ultimos ingresos
-          </h2>
-          <div class="auto-nuevo-ingreso">
-            <img src="./assets/bmw.webp" alt="BMW M4 2024 - 0 KM" class="imagenes">
-            <p><strong>NUEVO INGRESO:</strong> BMW M4 2024 - 0 KM</p>
-          </div>
-          <div class="auto-nuevo-ingreso">
-            <img src="./assets/Mustang.webp" alt="FORD MUSTANG 2024 - 0 KM" class="imagenes">
-            <p><strong>NUEVO INGRESO:</strong> FORD MUSTANG 2024 - 0 KM</p>
-          </div>  
-          <div class="auto-nuevo-ingreso">
-            <img src="./assets/Bronco.webp" alt="FORD BRONCO 2024 - 0 KM" class="imagenes">
-            <p><strong>NUEVO INGRESO:</strong> FORD BRONCO 2024 - 0 KM</p>
-          </div>
-          <div class="auto-nuevo-ingreso">
-            <img src="./assets/FordRanger.webp" alt="FORD RANGER 2023 - 30.000 KM" class="imagenes">
-            <p><strong>NUEVO INGRESO:</strong> FORD RANGER 2023 - 30.000 KM</p>
-          </div>
+      <section class="nuevo-ingreso">
+        <h2>
+          Ultimos ingresos
+        </h2>
+        <div class="auto-nuevo-ingreso">
+          <img src="./assets/bmw.webp" alt="BMW M4 2024 - 0 KM" class="imagenes">
+          <p><strong>NUEVO INGRESO:</strong> BMW M4 2024 - 0 KM</p>
+        </div>
+        <div class="auto-nuevo-ingreso">
+          <img src="./assets/Mustang.webp" alt="FORD MUSTANG 2024 - 0 KM" class="imagenes">
+          <p><strong>NUEVO INGRESO:</strong> FORD MUSTANG 2024 - 0 KM</p>
+        </div>  
+        <div class="auto-nuevo-ingreso">
+          <img src="./assets/Bronco.webp" alt="FORD BRONCO 2024 - 0 KM" class="imagenes">
+          <p><strong>NUEVO INGRESO:</strong> FORD BRONCO 2024 - 0 KM</p>
+        </div>
+        <div class="auto-nuevo-ingreso">
+          <img src="./assets/FordRanger.webp" alt="FORD RANGER 2023 - 30.000 KM" class="imagenes">
+          <p><strong>NUEVO INGRESO:</strong> FORD RANGER 2023 - 30.000 KM</p>
+        </div>
       </section>
-  
-
       <section class ="boton-ver-mas-unidades">
         <a href="./html/catalogo.html">
           <button >Ver más unidades</button>
         </a>  
       </section>
-      
-      
-      
       <section class="porque-elegirnos">
         <h2>¿Por qué elegirnos?</h2>
         <ul>
@@ -95,19 +85,19 @@
       <section class="testimonios">
         <h2>Lo que dicen nuestros clientes</h2>
         <div class="contenedor-testimonios">
-          <blockquote>
+          <blockquote class ="scale-up-hor-center">
             <p>"YourWheels me ayudó a encontrar el auto perfecto. ¡Excelente atención y facilidades de pago!"</p>
             <cite>- Juan Pérez</cite>
           </blockquote>
-          <blockquote>
+          <blockquote class ="scale-up-hor-center">
             <p>"La mejor experiencia de compra, me asesoraron en todo el proceso. ¡100% recomendados!"</p>
             <cite>- Laura Gómez</cite>
           </blockquote>
-          <blockquote>
+          <blockquote class ="scale-up-hor-center">
             <p>"Increíble servicio y variedad de autos. Encontré justo lo que buscaba a un precio excelente."</p>
             <cite>- Martín Rodríguez</cite>
           </blockquote>
-          <blockquote>
+          <blockquote class ="scale-up-hor-center">
             <p>"Atención personalizada y financiamiento a medida. YourWheels hizo que comprar mi auto fuera muy fácil."</p>
             <cite>- Sofía Martínez</cite>
           </blockquote>
@@ -149,6 +139,27 @@
               navegacion.classList.toggle('activo');
             });
           }
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const testimonios = document.querySelectorAll('.contenedor-testimonios blockquote');
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('scale-up-hor-center');
+            } else {
+              entry.target.classList.remove('scale-up-hor-center'); // Remueve la animación al salir de la vista
+            }
+          });
+        }, {
+          threshold: 0.5 // Ajusta el umbral según sea necesario
+        });
+
+        testimonios.forEach(testimonio => {
+          observer.observe(testimonio);
+        });
       });
     </script>
   </div>
